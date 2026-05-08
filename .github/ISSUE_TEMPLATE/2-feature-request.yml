@@ -1,0 +1,52 @@
+name: Feature request or idea
+description: Suggest a new capability, an improvement, or a change to how Arkiv works.
+title: "[Idea]: "
+labels: ["feature-request", "triage", "reported-issue"]
+projects: ["Arkiv-Network/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea. The clearer the problem you're trying to solve, the better — we'd rather hear "I'm trying to do X and Y is in the way" than a fully-baked solution.
+
+  - type: input
+    id: contact
+    attributes:
+      label: How can we reach you?
+      description: Discord handle, email, or GitHub username — whichever is easiest if we want to dig in.
+      placeholder: e.g. @yourname on Discord
+    validations:
+      required: false
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Lead with the user pain or use case, not the solution. Who is affected, and what are they trying to do?
+      placeholder: When I'm building …, I run into …
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What do you have in mind?
+      description: Optional. If you've thought about a possible solution or rough shape, sketch it here. Don't worry about completeness.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What workarounds or alternatives have you considered?
+      description: Anything you've tried, looked at, or ruled out.
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else we should know?
+      description: Links, screenshots, related issues, or extra context.
+    validations:
+      required: false

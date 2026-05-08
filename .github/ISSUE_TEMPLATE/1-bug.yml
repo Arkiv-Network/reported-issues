@@ -1,0 +1,106 @@
+name: Bug or network issue
+description: Report a bug, unexpected behaviour, or a network problem with Arkiv.
+title: "[Bug]: "
+labels: ["bug", "triage", "reported-issue"]
+projects: ["Arkiv-Network/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. The more detail you can give us up front, the faster we can help.
+
+        Before opening an issue, please check the [documentation](https://docs.arkiv.network) and search [existing issues](https://github.com/Arkiv-Network/reported-issues/issues?q=is%3Aissue) to make sure it hasn't already been reported.
+
+  - type: input
+    id: contact
+    attributes:
+      label: How can we reach you?
+      description: Discord handle, email, or GitHub username — whichever is easiest if we need to follow up.
+      placeholder: e.g. @yourname on Discord
+    validations:
+      required: false
+
+  - type: dropdown
+    id: network
+    attributes:
+      label: Which Arkiv network?
+      description: Which environment were you using when you hit the issue?
+      options:
+        - Kaolin (testnet)
+        - Local / devnet
+        - Other (please describe in the steps)
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where did you hit the issue?
+      description: Which part of Arkiv is affected?
+      options:
+        - SDK (@arkiv-network/sdk)
+        - CLI / tooling
+        - Block explorer
+        - Documentation
+        - Website
+        - Other
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: SDK / tool version
+      description: If applicable, the version of the SDK or tool you're using (e.g. `@arkiv-network/sdk@0.4.2`).
+      placeholder: e.g. 0.4.2
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem in your own words. What did you do, what did you expect, and what actually happened?
+      placeholder: I tried to create an entity with expiresIn 100, and instead of …
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps a teammate could follow to see the same behaviour. Code snippets welcome.
+      placeholder: |
+        1. Run `…`
+        2. Call `arkiv.createEntity({ … })`
+        3. Observe the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or error output
+      description: Paste any error messages, stack traces, or relevant logs. This will be formatted as code automatically — no backticks needed.
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: tx
+    attributes:
+      label: Transaction hash or entity ID (if any)
+      description: If the issue relates to a specific transaction or entity, paste the hash or ID here.
+      placeholder: 0x…
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else we should know?
+      description: Screenshots, recordings, links, or extra context.
+    validations:
+      required: false
