@@ -2,7 +2,7 @@ name: Feature request or idea
 description: Suggest a new capability, an improvement, or a change to how Arkiv works.
 title: "[Idea]: "
 labels: ["feature-request", "triage", "reported-issue"]
-projects: ["Arkiv-Network/1"]
+projects: ["Arkiv-Network/4"]
 body:
   - type: markdown
     attributes:

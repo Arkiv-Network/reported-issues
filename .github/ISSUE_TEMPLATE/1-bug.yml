@@ -3,7 +3,7 @@ description: Report a bug, unexpected behaviour, or a network problem with Arkiv
 title: "[Bug]: "
 labels: ["bug", "triage", "reported-issue"]
 type: bug
-projects: ["Arkiv-Network/1"]
+projects: ["Arkiv-Network/4"]
 body:
   - type: markdown
     attributes:
