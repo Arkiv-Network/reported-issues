@@ -6,6 +6,3 @@ contact_links:
   - name: Arkiv documentation
     url: https://docs.arkiv.network
     about: Before reporting, please check the docs — your question may already be answered there.
-  - name: Security disclosure
-    url: https://github.com/Arkiv-Network/reported-issues/security/advisories/new
-    about: Found a security issue? Please report it privately through GitHub Security Advisories — do not open a public issue.

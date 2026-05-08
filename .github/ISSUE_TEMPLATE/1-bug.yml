@@ -2,6 +2,7 @@ name: Bug or network issue
 description: Report a bug, unexpected behaviour, or a network problem with Arkiv.
 title: "[Bug]: "
 labels: ["bug", "triage", "reported-issue"]
+type: bug
 projects: ["Arkiv-Network/1"]
 body:
   - type: markdown
@@ -21,12 +22,13 @@ body:
       required: false
 
   - type: dropdown
-    id: network
+    id: db-chain
     attributes:
-      label: Which Arkiv network?
-      description: Which environment were you using when you hit the issue?
+      label: Which DB-chain?
+      description: Which DB-chain were you using when you hit the issue?
       options:
-        - Kaolin (testnet)
+        - Kaolin
+        - Braga
         - Local / devnet
         - Other (please describe in the steps)
       default: 0
