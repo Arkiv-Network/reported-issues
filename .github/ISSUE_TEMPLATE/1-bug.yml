@@ -27,8 +27,8 @@ body:
       label: Which DB-chain?
       description: Which DB-chain were you using when you hit the issue?
       options:
-        - Kaolin
-        - Braga
+        - Kaolin (testnet)
+        - Braga (testnet)
         - Local / devnet
         - Other (please describe in the steps)
       default: 0
