@@ -44,6 +44,7 @@ body:
         - SDK (@arkiv-network/sdk)
         - CLI / tooling
         - Block explorer
+        - Entity Explorer (data.arkiv.network)
         - Documentation
         - Website
         - Other
