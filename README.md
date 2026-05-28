@@ -23,9 +23,12 @@ Every issue lands on the team's triage queue. A maintainer will:
 - **Acknowledge** the report and apply the right labels.
 - **Ask for more info** if the form didn't capture enough to act on.
 - **Decide** whether it's a real bug, a usage question, a known limitation, or a feature we'll consider.
-- **Link** the issue to a tracking ticket if engineering is going to work on it, or close it with a clear explanation if not.
+- **Route** the work. Arkiv is built across several repos (SDKs, node, docs, website, infra). When a report needs code changes, we open a linked issue in the right repo and mark this one as the parent. **Your issue here stays open as the public tracker** until the fix ships — so you only have to watch one place.
+- **Close with a note** once the fix has landed and been released, linking the PR or release so you can see what changed.
 
 We aim to get to new reports within a few working days. If something is urgent (e.g. the network is down for you), please flag that in the report and we'll prioritise.
+
+> Maintainers: the internal triage flow lives in [`TRIAGE.md`](./TRIAGE.md).
 
 ## Security issues
 
